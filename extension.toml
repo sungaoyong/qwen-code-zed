@@ -1,0 +1,38 @@
+id = "qwen-code"
+name = "Qwen Code"
+version = "0.5.2"
+schema_version = 1
+authors = ["sungaoyong <18523958@qq.com>"]
+description = "通义千问代码模型集成到 Zed 编辑器。通过 ACP 协议提供智能代码补全、对话编程和上下文感知建议。"
+repository = "https://github.com/yourname/qwen-code-zed"
+
+[agent_servers.qwen]
+name = "Qwen Code"
+
+# macOS Apple Silicon
+[agent_servers.qwen.targets.darwin-aarch64]
+archive = "https://registry.npmmirror.com/@qwen-code/qwen-code/-/qwen-code-0.5.2.tgz"
+cmd = "node"
+args = ["./package/cli.js", "--experimental-acp"]
+env = { DISABLE_AUTOUPDATER = "1" }
+
+# macOS Intel
+[agent_servers.qwen.targets.darwin-x86_64]
+archive = "https://registry.npmmirror.com/@qwen-code/qwen-code/-/qwen-code-0.5.2.tgz"
+cmd = "node"
+args = ["./package/cli.js", "--experimental-acp"]
+env = { DISABLE_AUTOUPDATER = "1" }
+
+# Linux x86_64
+[agent_servers.qwen.targets.linux-x86_64]
+archive = "https://registry.npmmirror.com/@qwen-code/qwen-code/-/qwen-code-0.5.2.tgz"
+cmd = "node"
+args = ["./package/cli.js", "--experimental-acp"]
+env = { DISABLE_AUTOUPDATER = "1" }
+
+# Windows x64
+[agent_servers.qwen.targets.windows-x86_64]
+archive = "https://registry.npmmirror.com/@qwen-code/qwen-code/-/qwen-code-0.5.2.tgz"
+cmd = "node"
+args = ["./package/cli.js", "--experimental-acp"]
+env = { DISABLE_AUTOUPDATER = "1" }
