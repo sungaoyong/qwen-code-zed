@@ -1,5 +1,6 @@
 id = "qwen-code"
 name = "Qwen Code"
+icon = "qwen.svg"
 version = "0.6.1"
 schema_version = 1
 authors = ["@qwen-code/qwen-code"]
