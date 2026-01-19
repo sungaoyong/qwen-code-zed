@@ -1,7 +1,7 @@
 id = "qwen-code"
 name = "Qwen Code"
 icon = "qwen.svg"
-version = "0.6.1"
+version = "0.7.1"
 schema_version = 1
 authors = ["@qwen-code/qwen-code"]
 description = "Integrates Qwen Code models into the Zed editor. Provides intelligent code completion, chat-based programming, and context-aware suggestions through the ACP protocol. / 通义千问代码模型集成到 Zed 编辑器。通过 ACP 协议提供智能代码补全、对话编程和上下文感知建议。"
@@ -12,28 +12,28 @@ name = "Qwen Code"
 
 # macOS Apple Silicon
 [agent_servers.qwen.targets.darwin-aarch64]
-archive = "https://registry.npmmirror.com/@qwen-code/qwen-code/-/qwen-code-0.6.1.tgz"
+archive = "https://registry.npmmirror.com/@qwen-code/qwen-code/-/qwen-code-0.7.1.tgz"
 cmd = "node"
-args = ["./package/cli.js", "--experimental-acp"]
+args = ["./package/cli.js", "--acp"]
 env = { DISABLE_AUTOUPDATER = "1" }
 
 # macOS Intel
 [agent_servers.qwen.targets.darwin-x86_64]
-archive = "https://registry.npmmirror.com/@qwen-code/qwen-code/-/qwen-code-0.6.1.tgz"
+archive = "https://registry.npmmirror.com/@qwen-code/qwen-code/-/qwen-code-0.7.1.tgz"
 cmd = "node"
-args = ["./package/cli.js", "--experimental-acp"]
+args = ["./package/cli.js", "--acp"]
 env = { DISABLE_AUTOUPDATER = "1" }
 
 # Linux x86_64
 [agent_servers.qwen.targets.linux-x86_64]
-archive = "https://registry.npmmirror.com/@qwen-code/qwen-code/-/qwen-code-0.6.1.tgz"
+archive = "https://registry.npmmirror.com/@qwen-code/qwen-code/-/qwen-code-0.7.1.tgz"
 cmd = "node"
-args = ["./package/cli.js", "--experimental-acp"]
+args = ["./package/cli.js", "--acp"]
 env = { DISABLE_AUTOUPDATER = "1" }
 
 # Windows x64
 [agent_servers.qwen.targets.windows-x86_64]
-archive = "https://registry.npmmirror.com/@qwen-code/qwen-code/-/qwen-code-0.6.1.tgz"
+archive = "https://registry.npmmirror.com/@qwen-code/qwen-code/-/qwen-code-0.7.1.tgz"
 cmd = "node"
-args = ["./package/cli.js", "--experimental-acp"]
+args = ["./package/cli.js", "--acp"]
 env = { DISABLE_AUTOUPDATER = "1" }
